@@ -1,0 +1,20 @@
+New question: I want to have the button and input elements next to each other. But I want to have the 
+
+wo elements to be styled next to each other. Please suggest the changes needed in this CSS code, while I provide the HTML as well.
+
+#ai-form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+#ai-form button {
+    display: inline-block;
+    background-color: #0a0f32;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #f5efa8bb;
+    cursor: pointer;
+}\

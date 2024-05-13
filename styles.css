@@ -1,0 +1,144 @@
+
+
+/* General styles for adaptability */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(102, 102, 102);
+}
+
+/* Styling for the About Me section */
+#about-me {
+    background-color: #0a0f32; /* Night blue background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+#about-me img {
+    width: 200px; /* Set the size of the main image */
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image rounded */
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center 10%;
+    box-shadow: 0px 10px 50px rgba(70, 42, 250, 0.64), -0px -10px 50px rgba(112, 241, 255, 0.837); /* Add shadow for depth */
+    margin-bottom: 20px;
+}
+
+#about-me .highlights {
+    display: flex;
+    justify-content: space-around; /* Space out the highlight sections */
+    flex-wrap: wrap; /* Ensure responsiveness */
+    margin-top: 30px;
+}
+
+#about-me .highlight {
+    width: 30%; /* Width per highlight to fit three across */
+    margin: 10px;
+    text-align: center;
+}
+
+#about-me .highlight img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Rounded images for highlights */
+    box-shadow: 0px 4px 8px rgba(70, 42, 250, 0.64), 0px -4px 8px rgba(112, 241, 255, 0.837);
+    object-position: center 10%;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+    #about-me .highlight {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+/* Styling for the AI-bout Me section */
+#ai-bout-me {
+    text-align: center;
+}
+
+#ai-bout-me h1, #ai-bout-me p, #ai-bout-me h3 {
+    color: white;
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 20px;   
+    margin-bottom: 20px; 
+}
+
+label[for='user-question'] {
+    margin-bottom: 10px;
+}
+
+
+#ai-response {
+    display: none; /* Initially hidden */
+    background-color: #f8f8f8; /* Off-white background */
+    border: 1px solid #0a0f32; /* Thin edge */
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto; /* Center and provide spacing */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+
+
+#ai-form input {
+    width: 60%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #0a0f32;
+    box-shadow: 0px 4px 8px rgba(70, 42, 250, 0.64), 0px -4px 8px rgba(112, 241, 255, 0.837);
+    background-color: #0a0f32;
+    color: white;
+}
+
+#user-question::placeholder {
+    color: rgba(255, 255, 255, 0.588);          
+}
+
+
+#ai-form button {
+    background-color: #0a0f32;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#ai-bout-me h3 {
+    font-size: 18px;
+    
+}
+
+.suggestions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 10px; /* Spacing between buttons */
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto; /* Centering */
+}
+
+.suggestion-btn-1, .suggestion-btn-2, .suggestion-btn-3, .suggestion-btn-4 {
+    background-color: #0a0f32;
+    border: 1px solid #0a0f32;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0px 2px 3px rgba(70, 42, 250, 0.64), 0px -2px 3px rgba(112, 241, 255, 0.837);
+}
+
+@media (max-width: 800px) {
+    #ai-form, #ai-form button {
+        display: block;
+    }
+    #ai-form {
+        margin-bottom: 10px; /* Provide spacing below form when stacked */
+    }
+}
+

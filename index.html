@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Resume Website</title>
+</head>
+<body>
+    
+
+<!-- About Me Section -->
+<section id="about-me">
+    <img src="imgs/img-1.jpeg" alt="Your Image">
+    <h1>About Me</h1>
+    <p>Placeholder text about you. This section will contain a brief introduction and background information.</p>
+
+    
+    <!-- Highlights in Columns -->
+    <div class="highlights">
+        <!-- Highlight 1 -->
+        <div class="highlight">
+            <h2>Highlight 1</h2>
+            <h3>Subheading 1</h3>
+            <img src="imgs/Screenshot 2024-04-25 125028.png" alt="Highlight 1 Image">
+            <p>Description of highlight 1.</p>
+        </div>
+        
+        <!-- Highlight 2 -->
+        <div class="highlight">
+            <h2>Highlight 2</h2>
+            <h3>Subheading 2</h3>
+            <img src="highlight2.jpg" alt="Highlight 2 Image">
+            <p>Description of highlight 2.</p>
+        </div>
+        
+        <!-- Highlight 3 -->
+        <div class="highlight">
+            <h2>Highlight 3</h2>
+            <h3>Subheading 3</h3>
+            <img src="highlight3.jpg" alt="Highlight 3 Image">
+            <p>Description of highlight 3.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- AI-bout Me Section -->
+<section id="ai-bout-me">
+    <h1>AI-bout Me</h1>
+    <p>Interact with an AI trained on my personal experiences and writing style. Ask me anything from my professional insights to personal opinions!</p>
+    
+    <!-- User Input Form -->
+    <form id="ai-form">
+        <label for="user-question">Ask me something:</label>
+        <div>
+            <input type="text" id="user-question" name="user-question" placeholder="Type your question here...">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    
+    
+    <!-- Hidden Response Textbox -->
+    <div id="ai-response" style="display:none;">
+        <label for="ai-reply">AI Response:</label>
+        <textarea id="ai-reply" name="ai-reply" readonly></textarea>
+    </div>
+    
+    <!-- Suggested Questions -->
+    <h3>Here are some suggestions of what to ask me:</h3>
+    <div class="suggestions">
+        <button type="button" class="suggestion-btn-1">What work did you do on 20 April 2024?</button>
+        <button type="button" class="suggestion-btn-2">Where were you born?</button>
+        <button type="button" class="suggestion-btn-3">Suggestion 3</button>
+        <button type="button" class="suggestion-btn-4">Suggestion 4</button>
+    </div>
+</section>
+
+
+
+    <!-- Skills Section -->
+<!-- Skills Section -->
+<section id="skills">
+    <h1>Skills</h1>
+    <div class="skill">
+        <h2>Skill 1</h2>
+        <div class="progress">
+            <div class="progress-bar" style="width: 70%;">70%</div>
+        </div>
+    </div>
+    <div class="skill">
+        <h2>Skill 2</h2>
+        <div class="progress">
+            <div class="progress-bar" style="width: 50%;">50%</div>
+        </div>
+    </div>
+    <div class="skill">
+        <h2>Skill 3</h2>
+        <div class="progress">
+            <div class="progress-bar" style="width: 85%;">85%</div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- LinkedIn Link Section -->
+<!-- LinkedIn Link Section -->
+<section id="linkedin">
+    <h1>Connect with Me</h1>
+    <a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank">
+        <img src="linkedin_icon.png" alt="LinkedIn Icon">
+    </a>
+    <p>Follow me on LinkedIn to stay updated with my professional journey and latest insights.</p>
+
+    <!-- Copyright Information -->
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+</section>
+
+</body>
